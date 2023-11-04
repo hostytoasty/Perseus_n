@@ -784,10 +784,10 @@ void lua_tolstring(lua_State *instance, int index, int &strLen) {
         lua_State *nL = lua_newthread(instance);
         lua_getglobal(nL, STR("pg"));
 
-        lua_getglobal(nL, STR("CheaterMarkCommand"));
-        lua_pushcfunction(nL, nilFunc);
-        lua_setfield(nL, -2, STR("execute"));
-        lua_pop(nL, 1);
+        //lua_getglobal(nL, STR("CheaterMarkCommand"));
+        //lua_pushcfunction(nL, nilFunc);
+        //lua_setfield(nL, -2, STR("execute"));
+        //lua_pop(nL, 1);
 
         lua_getglobal(nL, STR("ActivityBossSceneTemplate"));
         lua_pushcfunction(nL, hookCommitCombat);
