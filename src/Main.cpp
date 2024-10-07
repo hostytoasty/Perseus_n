@@ -953,7 +953,7 @@ void init(JNIEnv *env, jclass clazz, jobject context) {
         crash();
     }
 
-    Toast(env, context, OBFUSCATE("Enjoy the feet, by @Egoistically"),
+    Toast(env, context, OBFUSCATE("More skins, more sins"),
           ToastLength::LENGTH_LONG);
 
     pthread_t ptid;
