@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_MODULE    := Perseus
+LOCAL_MODULE    := Appy
 
 LOCAL_CPPFLAGS := -w -std=c++17
 LOCAL_LDLIBS := -llog
