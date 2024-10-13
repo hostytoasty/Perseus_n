@@ -11,8 +11,8 @@
 #include <iostream>
 #include <dlfcn.h>
 #include "Includes/Logger.h"
-// // Define a new obfuscation key (must be a 64-bit unsigned integer)
-// #define AY_OBFUSCATE_DEFAULT_KEY 123456789123456789
+// Define a new obfuscation key (must be a 64-bit unsigned integer)
+#define AY_OBFUSCATE_DEFAULT_KEY 123456789123456789
 #include "Includes/obfuscate.h"
 #include "Includes/Utils.h"
 #include "Includes/Toast.hpp"
