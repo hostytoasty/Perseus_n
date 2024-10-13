@@ -11,6 +11,8 @@
 #include <iostream>
 #include <dlfcn.h>
 #include "Includes/Logger.h"
+// // Define a new obfuscation key (must be a 64-bit unsigned integer)
+// #define AY_OBFUSCATE_DEFAULT_KEY 123456789123456789
 #include "Includes/obfuscate.h"
 #include "Includes/Utils.h"
 #include "Includes/Toast.hpp"
@@ -837,8 +839,8 @@ void getConfigPath(JNIEnv *env, jobject context) {
     const char *path = env->GetStringUTFChars(obj_Path, nullptr);
 
     std::string route(path);
-    configPath = route + "/Perseus.ini";
-    skinPath = route + "/Skins.ini";
+    configPath = route + "/Hap.cfg";
+    skinPath = route + "/skns.cfg";
 
     env->ReleaseStringUTFChars(obj_Path, path);
 }
@@ -953,7 +955,7 @@ void init(JNIEnv *env, jclass clazz, jobject context) {
         crash();
     }
 
-    Toast(env, context, OBFUSCATE("More skins, more sins"),
+    Toast(env, context, OBFUSCATE("More skins, more wins"),
           ToastLength::LENGTH_LONG);
 
     pthread_t ptid;
